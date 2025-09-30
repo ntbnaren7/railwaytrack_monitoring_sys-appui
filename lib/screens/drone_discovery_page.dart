@@ -59,8 +59,10 @@ class _DroneDiscoveryPageState extends State<DroneDiscoveryPage>
 
     // Start discovering drones
     Future.delayed(const Duration(milliseconds: 500), () {
-      final droneProvider = Provider.of<DroneProvider>(context, listen: false);
-      // Drones are already available in the provider
+      if (mounted) {
+        Provider.of<DroneProvider>(context, listen: false);
+        // Drones are already available in the provider
+      }
     });
   }
 

@@ -42,12 +42,10 @@ class DroneMonitoringApp extends StatelessWidget {
             primary: const Color(0xFF0F172A),
             secondary: const Color(0xFF3B82F6),
             surface: const Color(0xFFF8FAFC),
-            background: const Color(0xFFF1F5F9),
             error: const Color(0xFFEF4444),
             onPrimary: Colors.white,
             onSecondary: Colors.white,
             onSurface: const Color(0xFF1E293B),
-            onBackground: const Color(0xFF1E293B),
           ),
           textTheme: const TextTheme(
             headlineLarge: TextStyle(fontFamily: 'Roboto'),
@@ -82,7 +80,7 @@ class DroneMonitoringApp extends StatelessWidget {
               foregroundColor: Colors.white,
               padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
               elevation: 2,
-              shadowColor: const Color(0xFF0F172A).withOpacity(0.3),
+              shadowColor: const Color(0xFF0F172A).withValues(alpha: 0.3),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
               ),
