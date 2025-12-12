@@ -134,7 +134,7 @@ dependencies:
 
 ### 1️⃣ Clone the repository
 ```sh
-git clone <repository-url>
+git clone https://github.com/ntbnaren7/railwaytrack_monitoring_sys-appui
 cd drone_monitoring_system
 ```
 
